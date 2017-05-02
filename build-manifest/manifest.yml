@@ -1,6 +1,5 @@
 applications:
-- name: 8gauge
+- name: vector-art-gallery
   memory: 128M
   instances: 1
   buildpack: staticfile_buildpack
-

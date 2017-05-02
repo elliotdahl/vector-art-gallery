@@ -1,20 +1,10 @@
-#8 Gauge Styleguide
-The 8pt CSS Framework
+Vector Art Gallery
+100 days of geometric art 
+
+Built on the 8pt CSS framework
 
 Start middleman local server
 ```$ Middleman Server```
 
 Build source files
 ```$ Middleman Build```
-
-Components:
-- Buttons
-- Inputs
-- SVG icon system
-- SVG Spinner
-- Flexbox grid
-- Typography
-- SVG icon system
-- CSS Tables (flexbox)
-- Whitespace
-- Box Shadow
