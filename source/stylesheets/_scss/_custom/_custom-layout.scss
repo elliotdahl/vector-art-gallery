@@ -1,19 +1,26 @@
+$image-width:calc(33.33333% - 18px);
+$image-width-sm:calc(33.33333% - 0px);
+
 //Background
 body {
   background-color: $light-2;
 }
 .arena {
   max-width:960px;
+  padding:0;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
   img {
     //flex: 100%;
-    max-width: 304px;
-    max-height: 304px;
+
+    max-width: $image-width;
+    max-height: $image-width;
+    // max-width:302px;
+    // max-height:302px;
     min-width:100px;
     min-height: 100px;
     margin: 8px;
@@ -23,7 +30,9 @@ body {
 @media only screen and (max-width: 400px) {
   .arena {
     img {
-      
+      max-width: $image-width-sm;
+      max-height: $image-width-sm;
+      margin: 0px;
     }
   }
 }
