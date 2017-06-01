@@ -4,35 +4,37 @@ $image-width-sm:calc(33.33333% - 0px);
 //Background
 body {
   background-color: $light-2;
+  // background-color: white;
 }
 .arena {
   max-width:960px;
   padding:0;
   margin-left: auto;
   margin-right: auto;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: center;
+  display: flex;
+  flex-direction: row;
+  .shape {
+    margin:16px;
+  }
   img {
-    //flex: 100%;
-
-    max-width: $image-width;
-    max-height: $image-width;
-    // max-width:302px;
-    // max-height:302px;
-    min-width:100px;
-    min-height: 100px;
-    margin: 8px;
+    width:100%;
+    margin:0;
     padding:0;
+    display: block;
   }
 }
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 800px) {
   .arena {
-    img {
-      max-width: $image-width-sm;
-      max-height: $image-width-sm;
-      margin: 0px;
+    .shape{
+      margin:8px;
+    }
+  }
+}
+@media only screen and (max-width: 475px) {
+  .arena {
+    .shape{
+      margin:2px;
     }
   }
 }
